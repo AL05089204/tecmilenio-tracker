@@ -1,0 +1,1 @@
+package com.tecmilenio.imctracker.model; public enum Rol { USER, ADMIN }

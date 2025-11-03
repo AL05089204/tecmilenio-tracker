@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+  <jdbc-connection-pool name="IMCTrackerPool" res-type="javax.sql.DataSource"
+    datasource-classname="org.postgresql.ds.PGSimpleDataSource">
+    <property name="serverName" value="localhost"/>
+    <property name="portNumber" value="5432"/>
+    <property name="databaseName" value="imctracker"/>
+    <property name="user" value="postgrl"/>
+    <property name="password" value="hever"/>
+  </jdbc-connection-pool>
+  <jdbc-resource pool-name="IMCTrackerPool" jndi-name="jdbc/imctrackerDS"/>
+</resources>
